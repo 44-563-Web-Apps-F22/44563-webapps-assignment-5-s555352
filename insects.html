@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container-fluid {
+      border: 1px solid rgb(229, 220, 220);
+      border-radius: 4px;
+      padding: 3px;
+    }
+    table, th, td {
+      border: 1px solid;
+      text-align: center;
+    }
+    tr:nth-child(even) {background-color: #d4da7d;}
+    tr:nth-child(odd) {background-color: #41de3c;}
+    tr:hover{background-color: rgb(230, 167, 105) ;}
+    th{
+      background-color: rgb(135, 135, 213);
+    }
+    .dropdown{
+      padding: 10px;
+      border:1px solid black;
+    }
+    </style>
 </head>
 <body>
     <h1>Insects by Asritha Baddam</h1>
@@ -28,6 +49,73 @@
     <div class="col-md">Mayflies</div>
     <p>The first row with letter 'B' breaks first. Later all the single letters got breaked</p>
 
+    <div class = "container">
+      <img src="Birdwing.jpg" class="img-fluid" alt="Birdwing" width="200px" height="200px">
+      <img src="Dragonfly.jpg" " class="img-fluid" alt="Dragonfly" width="200px" height="200px">
+      <img src="Aphid.jpg" class="img-fluid" alt="Aphid" width="200px" height="200px">
+    </div>
+
+    <div class = "container">
+      <img src="Birdwing.jpg" class="img-thumbnail" alt="Birdwing" width="200px" height="200px">
+      <img src="Dragonfly.jpg" " class="img-thumbnail" alt="Dragonfly" width="200px" height="200px">
+      <img src="Aphid.jpg" class="img-thumbnail" alt="Aphid" width="200px" height="200px">
+    </div>
+
+    <table class = "table">
+      <caption>Letters,Cities and Rivers</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Letter</th>
+          <th scope="col">Insect</th>
+          <th scope="col">City</th>
+          <th scope="col">River</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>B</td>
+          <td>Birdwing</td>
+          <td>Boston</td>
+          <td>Braden River</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>A</td>
+          <td>Antlions</td>
+          <td>Austin</td>
+          <td>Abita River</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>D</td>
+          <td>Dragonfly</td>
+          <td>Denver</td>
+          <td>Doyles River</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>D</td>
+          <td>Damselfly</td>
+          <td>Detroit</td>
+          <td>Dry River</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>A</td>
+          <td>Aphids</td>
+          <td>Atlanta</td>
+          <td>Alatna River</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>M</td>
+          <td>Mayflies</td>
+          <td>Minneapolis</td>
+          <td>Mississippi River</td>
+        </tr>
+    </table>
 
 
 </body>
