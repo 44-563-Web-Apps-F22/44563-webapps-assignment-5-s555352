@@ -1,147 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Starter</title>
+  <title>Insects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .container-fluid {
-      border: 1px solid rgb(229, 220, 220);
-      border-radius: 4px;
-      padding: 3px;
-    }
-    table, th, td {
-      border: 1px solid;
-      text-align: center;
-    }
-    tr:nth-child(even) {background-color: #d4da7d;}
-    tr:nth-child(odd) {background-color: #41de3c;}
-    tr:hover{background-color: rgb(230, 167, 105) ;}
-    th{
-      background-color: rgb(135, 135, 213);
-    }
-    .dropdown{
-      padding: 10px;
-      border:1px solid black;
-    }
-    </style>
+  <link rel="stylesheet" href="./insects.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Insects by Asritha Baddam</h1>
-    <div class="container"></div>
-    <div class="row"></div>
-    <div class="col-sm-2">B</div>
-    <div class="col-sm-2">A</div>
-    <div class="col-sm-2">D</div>
-    <div class="col-sm-2">D</div>
-    <div class="col-sm-2">A</div>
-    <div class="col-sm-2">M</div>
-    <div class="row"></div>
-    <div class="col-md">Birdwing</div>
-    <div class="col-md">Antlions</div>
-    <div class="col-md">Dragonfly</div>
-    <div class="col-md">Damselfly</div>
-    <div class="col-md">Aphids</div>
-    <div class="col-md">Mayflies</div>
-    <p>The first row with letter 'B' breaks first. Later all the single letters got breaked</p>
-
-    <div class = "container">
-      <img src="Birdwing.jpg" class="img-fluid" alt="Birdwing" width="200px" height="200px">
-      <img src="Dragonfly.jpg" " class="img-fluid" alt="Dragonfly" width="200px" height="200px">
-      <img src="Aphid.jpg" class="img-fluid" alt="Aphid" width="200px" height="200px">
-    </div>
-
-    <div class = "container">
-      <img src="Birdwing.jpg" class="img-thumbnail" alt="Birdwing" width="200px" height="200px">
-      <img src="Dragonfly.jpg" " class="img-thumbnail" alt="Dragonfly" width="200px" height="200px">
-      <img src="Aphid.jpg" class="img-thumbnail" alt="Aphid" width="200px" height="200px">
-    </div>
-
-    <table class = "table">
-      <caption>Letters, Cities and Rivers</caption>
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Letter</th>
-          <th scope="col">Insect</th>
-          <th scope="col">City</th>
-          <th scope="col">River</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>B</td>
-          <td>Birdwing</td>
-          <td>Boston</td>
-          <td>Braden River</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>A</td>
-          <td>Antlions</td>
-          <td>Austin</td>
-          <td>Abita River</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>D</td>
-          <td>Dragonfly</td>
-          <td>Denver</td>
-          <td>Doyles River</td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>D</td>
-          <td>Damselfly</td>
-          <td>Detroit</td>
-          <td>Dry River</td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>A</td>
-          <td>Aphids</td>
-          <td>Atlanta</td>
-          <td>Alatna River</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>M</td>
-          <td>Mayflies</td>
-          <td>Minneapolis</td>
-          <td>Mississippi River</td>
-        </tr>
-    </table>
-    <label>Buttons</label>
-      <div>
-        <button type="button" class="btn btn-primary">B</button>
-        <button type="button" class="btn btn-primary">D</button>
-        <button type="button" class="btn btn-primary">A</button>
-        <button type="button" class="btn btn-primary">D</button>
-        <button type="button" class="btn btn-primary">A</button>
-        <button type="button" class="btn btn-primary">M</button>
-      </div>
-    <label>Buttons group</label>
-      <div class="btn-toolbar" role="group" aria-label="Styling">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-success">B</button>
-          <button type="button" class="btn btn-success">D</button>
-          <button type="button" class="btn btn-success">A</button>
-        </div>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-warning">D</button>
-        <button type="button" class="btn btn-warning">A</button>
-      </div>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-danger">M</button>
+  <div class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Interesting Insects</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./advanced.html">Advanced</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
+  <h1>Insects by Asritha Baddam</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <p>B</p>
+      </div>
+      <div class="col-sm-2">
+        <p>A</p>
+      </div>
+      <div class="col-sm-2">
+        <p>D</p>
+      </div>
+      <div class="col-sm-2">
+        <p>D</p>
+      </div>
+      <div class="col-sm-2">
+        <p>A</p>
+      </div>
+      <div class="col-sm-2">
+        <p>M</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <p>Birdwing</p>
+      </div>
+      <div class="col-md">
+        <p>Aphids</p>
+      </div>
+      <div class="col-md">
+        <p>Dragonfly</p>
+      </div>
+      <div class="col-md">
+        <p>Damselfly</p>
+      </div>
+      <div class="col-md">
+        <p>Antlions</p>
+      </div>
+      <div class="col-md">Mayflies</div>
+    </div>
+  </div>
+  <br>
+  <p>The first row with letter 'B' breaks first. Later all the single letters got breaked</p>
+  <h3>Responsive Images</h3>
+  <div class="gallery min-vh-50">
+    <div class="container">
+      <img src="Birdwing.jpg" class="rounded float-sm-none" alt="Birdwing" width="200px" height="200px">
+      <img src="Aphid.jpg" class="rounded float-sm-none" alt="Aphid" width="200px" height="200px">
+      <img src="Dragonfly.jpg" class="rounded float-sm-none" alt="Dragonfly" width="200px" height="200px">
+    </div>
+  </div>
+<h3>Thumbnail Images</h3>
+  <div class="container">
+    <div class="img-2">
+      <img src="Birdwing.jpg" class="img-thumbnail" alt="Birdwing" style="width: 200px; height: 200px;">
+      <img src="Aphid.jpg" class="img-thumbnail" alt="Aphid" style="width: 200px; height: 200px;">
+      <img src="Dragonfly.jpg" class="img-thumbnail" alt="Dragonfly" style="width: 200px; height: 200px;">
+    </div>
+  </div>
+<h1>Table</h1>
+<caption>Alphabetical Wise Rivers</caption>
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th class="table-primary" scope="row">Row ID</th>
+        <th class="table-primary">Letter</th>
+        <th class="table-primary">Insect</th>
+        <th class="table-primary">City</th>
+        <th class="table-primary">River</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-primary" scope="row">1</td>
+        <td class="table-dark">B</td>
+        <td class="table-dark">Birdwing</td>
+        <td class="table-dark">Boston</td>
+        <td class="table-dark">Braden River</td>
+      </tr>
 
+      <tr>
+        <td class="table-primary" scope="row">2</td>
+        <td class="table-warning">A</td>
+        <td class="table-warning">Antlions</td>
+        <td class="table-warning">Austin</td>
+        <td class="table-warning">Abita River</td>
+      </tr>
 
+      <tr>
+        <td class="table-primary" scope="row">3</td>
+        <td class="table-dark">D</td>
+        <td class="table-dark">Dragonfly</td>
+        <td class="table-dark">Denver</td>
+        <td class="table-dark">Doyles River</td>
+      </tr>
+
+      <tr>
+        <td class="table-primary" scope="row">4</td>
+        <td class="table-warning">D</td>
+        <td class="table-warning">Damselfly</td>
+        <td class="table-warning">Detroit</td>
+        <td class="table-warning">Dry River</td>
+      </tr>
+
+      <tr>
+        <td class="table-primary" scope="row">5</td>
+        <td class="table-dark">A</td>
+        <td class="table-dark">Aphid</td>
+        <td class="table-dark">Atlanta</td>
+        <td class="table-dark">Alatna River</td>
+      </tr>
+
+      <tr>
+        <td class="table-primary" scope="row">6</td>
+        <td class="table-warning">M</td>
+        <td class="table-warning">Mayflies</td>
+        <td class="table-warning">Minneapolis</td>
+        <td class="table-warning">Mississippi River</td>
+      </tr>
+    </tbody>
+  </table>
+<h1>Buttons</h1>
+<br>
+    <button type="button" class="btn btn-outline-primary btn-lg">B</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">A</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">D</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">D</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">A</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">M</button>
+  <br>
+  <h1>Button Group</h1>
+  <br>
+  <div class="btn-toolbar" role="toolbar" aria-label="Buttons Group for Letters">
+    <div class="btn-group me-2" role="group" aria-label="First Group with Success">
+      <button type="button" class="btn btn-success btn-lg">B</button>
+      <button type="button" class="btn btn-success btn-lg">A</button>
+      <button type="button" class="btn btn-success btn-lg">D</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group with alert coloring">
+      <button type="button" class="btn btn-warning btn-lg">D</button>
+      <button type="button" class="btn btn-warning btn-lg">A</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group with danger coloring">
+      <button type="button" class="btn btn-danger btn-lg">M</button>
+    </div>
+  </div>
+  <br>
+<h1>DropDrown Menu</h1>
+<br>
+ <div class="dropdown">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown Menu
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./basic.html">Basic</a></li>
+        <li><a class="dropdown-item" href="./advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <form>
+    <div class="form-group">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputInsect" class="form-control">Insect</label>
+        <input type="text" class="form-control" id="exampleInputInsect" placeholder="Enter your insect">
+      </div>
+    </div>
+
+    <div class="form-check">
+      <label for="exampleInputInsect" class="<div class=" form-check">
+        <input class="form-check-input" type="checkbox" value="" id="">
+        <label class="form-check-label" for="">
+          <b>Sign up for newsletter? </b>
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <br>
+
+  <div class="card-group">
+  <div class="card" style="width: 20rem;">
+    <img src="Birdwing.jpg" class="card-img-top" alt="Birdwing" style="width: 480px; height: 480px;">
+    <div class="card-body">
+      <h5 class="card-title">Birdwing</h5>
+      <p class="card-text">Their bodies are covered with a hard armor called the exoskeleton. Most ants are either red or black in color and length can be anywhere from 1/3" to 1/2". Like other insects, they have six legs; each with three joints. Ants have large heads with compound eyes, elbowed antennae, and powerful jaws.</p>
+      <a href="https://en.wikipedia.org/wiki/Birdwing" class="btn btn-primary">Read More..</a>
+    </div>
+  </div>
+<div class=" card" style="width: 20rem;">
+        <img src="Aphid.jpg" class="card-img-top" alt="Aphid" style="width: 480px; height: 480px;">
+        <div class="card-body">
+          <h5 class="card-title">Aphid</h5>
+          <p class="card-text">Head lice are tiny insects that live on people's heads. Adult lice are about the size of sesame seeds. The eggs, called nits, are even smaller - about the size of a dandruff flake. Lice and nits are found on or near the scalp, most often at the neckline and behind the ears.</p>
+          <a href="https://en.wikipedia.org/wiki/Aphid" class="btn btn-primary"">Read More..</a>
+    </div>
+  </div>
+
+  <div class=" card" style="width: 20rem;">
+            <img src="Dragonfly.jpg" class="card-img-top" alt="Dragonfly" style="width: 480px; height: 480px;">
+            <div class="card-body">
+              <h5 class="card-title">Dragonfly</h5>
+              <p class="card-text">The netwinged insects of order Neuroptera feed on sapsucking and other insects that cause harm to trees and plants in forests.</p>
+              <a href="https://en.wikipedia.org/wiki/Dragonfly" class="btn btn-primary"">Read More..</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
-
